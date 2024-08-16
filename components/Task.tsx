@@ -14,7 +14,7 @@ const Task = (props: Props) => {
       <TouchableOpacity
       onPress={props.onRemove}
       >
-        <Text style={styles.taskText}>-</Text>
+        <Text style={styles.taskText}>✔️</Text>
       </TouchableOpacity>
     </View>
   )
@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
     margin: 5,
     borderWidth: 1,
     borderColor: '#808080',
-    borderRadius: 5
+    borderRadius: 5,
+    gap: 20
   },
   taskText: {
     fontSize: 20,
